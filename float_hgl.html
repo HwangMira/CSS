@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{
+            box-sizing:border-box;
+            /*모든 엘리먼트에 대해서 박스의 크기를 지정할 때의 기준은 border-box로 한다. */
+        }
+        .container{
+            width: 540px;
+            /*width 540은 실제로는 보다 크다 
+            폭을 계산할때 테두리를 포함해야함.*/
+            border:1px solid gray;
+            margin:auto;
+            /*전체 container가 알아서 중앙으로 온다.*/
+        }
+        header{
+            border-bottom: 1px solid gray;
+        }
+        
+        nav{
+            float:left;
+            width:120px;
+            border-right:1px solid gray;
+        }
+        article{
+            float:left;
+            width:300px;
+            border-left:1px solid gray;
+            border-right:1px solid gray;
+            margin-left:-1px;
+            /*왼쪽과 오른쪽의 마진이 겹쳐진다. */
+        }
+        aside{
+            float:left;
+            width:120px;
+            border-left:1px solid gray;
+            margin-left:-1px;
+        }
+        footer{
+            clear:both;
+            /*float효과를 제거.*/
+            border-top:1px solid gray;
+            text-align: center;
+            padding:20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSS</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>position</li>
+                <li>float</li>
+                <li>flex</li>
+            </ul>
+        </nav>
+        <article>
+            <h2>float</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quae earum enim ab distinctio corrupti eius reprehenderit non, rerum ut nisi autem cum sint perferendis eum id velit, molestias nesciunt. Ullam dignissimos consequuntur explicabo id voluptas vel deleniti nesciunt veritatis iusto commodi, laudantium cumque vero deserunt laboriosam. Ea, quia est?
+        </article>
+
+        <aside>
+            ad
+        </aside>
+        <footer>
+            copyleft
+        </footer>
+    </div>
+</body>
+</html>
